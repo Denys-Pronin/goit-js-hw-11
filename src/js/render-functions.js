@@ -5,7 +5,9 @@ export function renderImages(images) {
     .map(item => {
       console.log(item);
       return `<li class="gallery-item">
-	          <img class="gallery-img" src="${item.previewURL}">
+	          <div class="gallery-img">
+            <a href="${item.largeImageURL}"><img src="${item.webformatURL}"></a>
+            </div>
 	          <div class="property-wrapper">
             <div class="property">
             Likes

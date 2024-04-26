@@ -5,7 +5,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 export function fetchImages(searchText) {
   const API = '43543363-2c3a057550dcf1951d3e0c854';
-  const url = `https://pixabay.com/api/?key=${API}&q=${searchText}&image_type=photo&orientation=horizontal&safesearch=true`;
+  const url = `https://pixabay.com/api/?key=${API}&q=${searchText}&image_type=photo&orientation=horizontal&safesearch=true&`;
 
   return fetch(url)
     .then(response => {
